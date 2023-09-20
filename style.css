@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.5s;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.navbar ul li,
+a {
+    color: black;
+    display: flex;
+    margin-right: 18px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.Login {
+    color: white;
+    overflow: hidden;
+    position: relative;
+    background-color: black;
+    border: none;
+    border-radius: 2px;
+    padding: 5px;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: all 0.3s;
+}
+
+.clicked {
+    background-color: orange;
+}
+
+.top-container {
+    background-image: url("https://images.unsplash.com/photo-1568127334899-845fdfbf507a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1827&q=80");
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.top-container h1 {
+    color: orangered;
+    letter-spacing: 5px;
+}
+
+.active {
+    background-color: black;
+}
+
+.navbar ul li:hover,
+a:hover {
+    color: orangered;
+}
+
+.navbar.active ul li:hover {
+    color: orangered;
+}
+
+.pic {
+    border: 1px solid rgb(70, 69, 69);
+    padding: 1px;
+    width: 85%;
+}
+
+.bottom-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.navbar.active ul li,
+.navbar.active a {
+    color: white;
+}
+
+.navbar.active .Login {
+    background-color: white;
+    color: black;
+}
+
+.navbar.active .clicked {
+    background-color: orange;
+}
+
+.logo {
+   height: 45px;
+}
